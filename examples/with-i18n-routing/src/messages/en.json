@@ -1,0 +1,12 @@
+{
+  "homePage": {
+    "hero": {
+      "title": "Hello!",
+      "buttons": {
+        "en": "EN",
+        "es": "ES",
+        "fa": "FA"
+      }
+    }
+  }
+}
