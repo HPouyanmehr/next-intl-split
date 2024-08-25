@@ -1,12 +1,13 @@
-import { locales } from '@/i18n/locales';
 import { getLocale, getTranslations } from 'next-intl/server';
+
 import { Link } from '@/i18n/navigation';
+import { locales } from '@/i18n/locales';
 
 export default async function Home() {
   const currentLocale = await getLocale();
   const translate = await getTranslations({
     locale: currentLocale,
-    namespace: 'homePage.hero',
+    namespace: 'home.hero',
   });
 
   return (

@@ -6,8 +6,12 @@
     "name": "Hosein Pouyanmehr",
     "url": "https://github.com/HPouyanmehr"
   },
+  "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/HPouyanmehr/next-intl-split",
   "repository": "https://github.com/HPouyanmehr/next-intl-split",
