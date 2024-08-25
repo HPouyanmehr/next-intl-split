@@ -6,7 +6,8 @@
     "name": "Hosein Pouyanmehr",
     "url": "https://github.com/HPouyanmehr"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "homepage": "https://github.com/HPouyanmehr/next-intl-split",
   "repository": "https://github.com/HPouyanmehr/next-intl-split",
@@ -16,7 +17,9 @@
     "next-intl-split",
     "split"
   ],
-  "scripts": {},
+  "scripts": {
+    "build-lib": "npx tsc"
+  },
   "devDependencies": {
     "@types/node": "^22.5.0",
     "typescript": "^5.5.4"
