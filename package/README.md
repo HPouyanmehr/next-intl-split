@@ -107,7 +107,7 @@ export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale as any)) notFound();
 
-  const messages = loadI18nTranslations('./src/messages/', locale);
+  const messages = loadI18nTranslations('./src/i18n/dictionaries/', locale);
 
   return {
     messages,
@@ -124,7 +124,7 @@ import { loadI18nTranslations } from 'next-intl-split';
 export default getRequestConfig(async () => {
   const locale = 'en';
 
-  const messages = loadI18nTranslations('./src/messages/', locale);
+  const messages = loadI18nTranslations('./src/i18n/dictionaries/', locale);
 
   return {
     locale,
@@ -140,7 +140,10 @@ In the `getStaticProps` function, wrap the `messages` object with `loadI18nTrans
 ```ts
 // ...
 export async function getStaticProps(context) {
-  const messages = loadI18nTranslations('./src/messages/', context.locale);
+  const messages = loadI18nTranslations(
+    './src/i18n/dictionaries/',
+    context.locale
+  );
 
   return {
     props: {
