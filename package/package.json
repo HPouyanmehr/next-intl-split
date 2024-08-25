@@ -1,6 +1,6 @@
 {
   "name": "next-intl-split",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A loader for next-intl to split translation files properly.",
   "author": {
     "name": "Hosein Pouyanmehr",
