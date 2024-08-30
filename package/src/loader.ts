@@ -59,7 +59,7 @@ export const loadI18nTranslations = (
     files.forEach((file) => {
       if (typeof file === 'string' && file.endsWith('.json')) {
         const fileParents = file
-          .split('\\')
+          .split(path.sep)
           .filter((parent) => parent !== 'index.json');
         const filePath = path.join(absolutePath, file);
         const fileTranslations = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
