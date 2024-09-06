@@ -50,7 +50,7 @@ export const loadI18nTranslations = (
   locale: string
 ) => {
   const relativePath = dictionariesPath + locale;
-  const absolutePath = path.join(process.cwd(), relativePath);
+  const absolutePath = path.resolve(process.cwd(), relativePath);
 
   let translations = {};
 
@@ -61,7 +61,7 @@ export const loadI18nTranslations = (
         const fileParents = file
           .split(path.sep)
           .filter((parent) => parent !== 'index.json');
-        const filePath = path.join(absolutePath, file);
+        const filePath = path.resolve(absolutePath, file);
         const fileTranslations = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
         // Object {}
