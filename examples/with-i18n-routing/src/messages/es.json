@@ -1,0 +1,12 @@
+{
+  "home": {
+    "hero": {
+      "title": "Hola!",
+      "buttons": {
+        "en": "Ingles",
+        "es": "Español",
+        "fa": "Farsi"
+      }
+    }
+  }
+}
