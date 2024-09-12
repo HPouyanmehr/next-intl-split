@@ -45,7 +45,7 @@ export const loadMessages = (dictionariesPath: string) => {
           .split(path.sep)
           .filter((parent) => parent !== FILE_NAME);
 
-        const pathToFile = path.resolve(dictionariesPath, file);
+        const pathToFile = path.resolve(process.cwd(), dictionariesPath, file);
         const fileMessages = JSON.parse(readFileSync(pathToFile, 'utf-8'));
 
         messages = {

@@ -1,6 +1,10 @@
-node_modules/
-.git/
-src/
-.gitignore
-.npmignore
-tsconfig.json
+# Ignore everything
+*
+
+# Include necessary folders and files
+!load/
+!merge/
+!plugin/
+!write/
+!package.json
+!README.md

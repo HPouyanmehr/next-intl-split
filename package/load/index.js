@@ -34,7 +34,7 @@ const loadMessages = (dictionariesPath) => {
                 const fileParents = file
                     .split(path_1.default.sep)
                     .filter((parent) => parent !== FILE_NAME);
-                const pathToFile = path_1.default.resolve(dictionariesPath, file);
+                const pathToFile = path_1.default.resolve(process.cwd(), dictionariesPath, file);
                 const fileMessages = JSON.parse((0, fs_1.readFileSync)(pathToFile, 'utf-8'));
                 messages = {
                     ...messages,
