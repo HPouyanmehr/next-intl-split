@@ -3,14 +3,14 @@
     "target": "ESNext",
     "module": "CommonJS",
     "lib": ["ESNext", "DOM"],
-    "outDir": "./dist",
+    "outDir": "./",
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "declarationDir": "./dist"
+    "declarationDir": "./"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
