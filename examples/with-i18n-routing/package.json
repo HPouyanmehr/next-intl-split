@@ -16,7 +16,7 @@
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.6",
     "mui-markdown": "^1.2.1",
-    "next": "14.2.24",
+    "next": "14.2.27",
     "next-intl": "^3.26.3",
     "next-intl-split": "^1.2.8",
     "postcss": "8.4.41",
