@@ -41,7 +41,7 @@ export const loadI18nTranslations = (
     const pathExist = doesPathExist(absolutePath);
 
     if (pathExist) {
-      writeMessages(absolutePath, allMessages);
+      writeMessages(absolutePath, allMessages, { muteLogs: true });
     }
   }
 
