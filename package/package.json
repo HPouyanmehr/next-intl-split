@@ -61,13 +61,17 @@
     }
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-terser": "^1.0.0",
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "^22.5.0",
-    "next-intl": "^3.19.1",
+    "next-intl": "^4.13.4",
     "postcss": "^8.5.25",
     "rollup": "^2.79.2",
     "sharp": "^0.35.3",
     "typescript": "^5.5.4"
+  },
+  "overrides": {
+    "postcss": "^8.5.25",
+    "sharp": "^0.35.3"
   }
 }
