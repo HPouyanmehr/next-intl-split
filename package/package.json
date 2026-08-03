@@ -1,6 +1,6 @@
 {
   "name": "next-intl-split",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "A loader for next-intl to split translation files properly.",
   "author": {
     "name": "Hosein Pouyanmehr",
@@ -65,7 +65,9 @@
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "^22.5.0",
     "next-intl": "^3.19.1",
+    "postcss": "^8.5.25",
     "rollup": "^2.79.2",
+    "sharp": "^0.35.3",
     "typescript": "^5.5.4"
   }
 }
